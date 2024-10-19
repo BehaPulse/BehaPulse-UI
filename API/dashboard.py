@@ -97,9 +97,9 @@ class DeleteResource(Resource):
             cursor.close()
 
 
-@dashboard_ns.route('/<int:id>')
+@dashboard_ns.route('/<int:person_id>')
 class GetDashboradResource(Resource):
-    def get(self, id):
+    def get(self, person_id):
         """
         대시보드 조회
         """
@@ -113,7 +113,7 @@ class GetDashboradResource(Resource):
         cursor = db.cursor()
         try:
             query = "SELECT * FROM dashboard WHERE personId = %s"
-            cursor.execute(query, (id,))
+            cursor.execute(query, (person_id,))
             dashboard = cursor.fetchone()
 
             if not dashboard:
@@ -182,8 +182,9 @@ class UpdateResource(Resource):
             db.close()
             cursor.close()
 
+
 @dashboard_ns.route('/update/state/<int:person_id>')
-class UpdateState(Resource) :
+class UpdateState(Resource):
     def put(self, person_id):
         """
         Person 상태 수정

@@ -1,65 +1,13 @@
-.button-link {
-    width: 49%;
-    color: #6c757d;
-    background-color: transparent;
-    border: none;
-    outline: none !important;
-    align-content: center;
-}
-
-.button-link:hover, .button-link:focus, .button-link:active {
-    color: #6c757d !important;
-    background-color: transparent !important;
-    outline: none !important;
-    border: none !important;
-}
-
-/* icon */
-#login-email-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23699bf7' d='M19 14.5v-9c0-.83-.67-1.5-1.5-1.5H3.49c-.83 0-1.5.67-1.5 1.5v9c0 .83.67 1.5 1.5 1.5H17.5c.83 0 1.5-.67 1.5-1.5m-1.31-9.11c.33.33.15.67-.03.84L13.6 9.95l3.9 4.06c.12.14.2.36.06.51c-.13.16-.43.15-.56.05l-4.37-3.73l-2.14 1.95l-2.13-1.95l-4.37 3.73c-.13.1-.43.11-.56-.05c-.14-.15-.06-.37.06-.51l3.9-4.06l-4.06-3.72c-.18-.17-.36-.51-.03-.84s.67-.17.95.07l6.24 5.04l6.25-5.04c.28-.24.62-.4.95-.07'/%3E%3C/svg%3E");
-}
-
-#login-password-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23699bf7' d='M12 17a2 2 0 0 0 2-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
-}
-
-.login-layout-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-input-group {
+.login-input {
     background: #FFFFFF;
-    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    border-radius: 7px;
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+
 }
 
-.login-input-group .input-group-text {
-    border: 2px solid rgba(49, 97, 255, 0.87);
-    background-color: #FFFFFF;
-    border-right: None;
-}
-
-.login-input-group .form-control {
-    border: 2px solid rgba(49, 97, 255, 0.87);
-    line-height: 12px;
-}
-
-.login-input-group .form-control:focus {
-    border: 2px solid rgba(49, 97, 255, 0.87);
-    box-shadow: none;
-}
-
-.login-input-group .form-control::placeholder {
-    color: rgba(0, 0, 0, 0.37);
+.login-input::placeholder {
+    color: #A6A6A6;
 }

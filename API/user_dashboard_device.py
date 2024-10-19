@@ -116,7 +116,14 @@ class GetUserDashboardDevice(Resource):
             if not user_dashboard_devices:
                 return {'message': 'User dashboard devices not found'}, 404
 
-            return {'user_dashboard_devices': user_dashboard_devices}, 200
+            return {'user_dashboard_device': [
+                {
+                    'userEmail': user_dashboard_device[1],
+                    'personId': user_dashboard_device[2],
+                    'deviceId': user_dashboard_device[3]
+                }
+                for user_dashboard_device in user_dashboard_devices
+            ]}, 200
 
         except Exception as e:
             return {'message': str(e)}, 500
@@ -227,6 +234,48 @@ class UpdateResource(Resource):
             db.commit()
 
             return {'message': 'User dashboard device updated successfully'}, 200
+
+        except Exception as e:
+            db.rollback()
+            return {'message': str(e)}, 500
+
+        finally:
+            db.close()
+            cursor.close()
+
+@user_dashboard_device_ns.route('/user_dashboard_devices/<string:userEmail>/<string:location>')
+class GetUserDashboardDevice(Resource):
+    def get(self, userEmail, location):
+        """
+        유저 대시보드에서 장치가 설치된 위치 리스트 가져오기
+        """
+        db = mysql.connector.connect(
+            host=db_config['Database']['host'],
+            user=db_config['Database']['user'],
+            password=db_config['Database']['password'],
+            database=db_config['Database']['database'],
+            auth_plugin='mysql_native_password'
+        )
+        cursor = db.cursor()
+        try:
+            query = """select * from user_dashboard_device udd            
+            join device d on udd.deviceId = d.deviceId
+            where udd.userEmail = %s and d.install_location = %s           
+            """
+            cursor.execute(query, (userEmail, location))
+            user_dashboard_devices = cursor.fetchall()
+
+            if not user_dashboard_devices:
+                return {'message': 'User dashboard devices not found'}, 404
+
+            return {'user_dashboard_device': [
+            {
+                 'userEmail': user_dashboard_device[1],
+                 'personId': user_dashboard_device[2],
+                 'deviceId': user_dashboard_device[3],
+            }
+            for user_dashboard_device in user_dashboard_devices
+            ]}, 200
 
         except Exception as e:
             db.rollback()

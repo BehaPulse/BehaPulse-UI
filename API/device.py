@@ -49,6 +49,7 @@ class RegisterResource(Resource):
         )
         cursor = db.cursor()
         try:
+
             # MAC 주소 중복 확인
             query = "SELECT * FROM device WHERE macAddress = %s"
             cursor.execute(query, (mac_address,))
@@ -227,7 +228,23 @@ class UpdateDeviceResource(Resource):
             cursor.execute(query, (device_type, install_location, room, check_date, note, on_off, macAddress))
             db.commit()
 
-            return {'message': 'Device updated successfully'}, 200
+            # 수정한 행을 반환
+            query = "SELECT * FROM device WHERE macAddress = %s"
+            cursor.execute(query, (macAddress,))
+            device = cursor.fetchone()
+
+            device_data = {
+                'deviceId': device[0],
+                'macAddress': device[1],
+                'type': device[2],
+                'install_location': device[3],
+                'room': device[4],
+                'check_date': device[5].strftime('%Y-%m-%d'),
+                'on_off': device[6],
+                'note': device[7],
+            }
+
+            return {'message': 'Device updated successfully', 'device': device_data}, 200
 
         except Exception as e:
             db.rollback()
@@ -239,6 +256,7 @@ class UpdateDeviceResource(Resource):
 
 
 csi_data_dict = collections.defaultdict(lambda: {'amp': collections.deque(maxlen=100)})
+
 
 def process_csi_data(line):
     global csi_data_dict
@@ -296,6 +314,7 @@ class CSI(Resource):
 @device_ns.route('/CSI/<string:mac_address>')
 class LatestCSIData(Resource):
     global csi_data_dict
+
     def get(self, mac_address):
         if mac_address in csi_data_dict:
             return jsonify(list(csi_data_dict[mac_address]['amp']))

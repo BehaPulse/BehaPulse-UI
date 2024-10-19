@@ -134,3 +134,48 @@ class DeleteResource(Resource):
         finally:
             db.close()
             cursor.close()
+
+@user_dashboard_ns.route('/user_dashboards_with_details/<string:userEmail>')
+class GetDashboardsWithDetailsResource(Resource):
+    def get(self, userEmail):
+        """
+        유저 대시보드 리스트 가져오기
+        """
+        db = mysql.connector.connect(
+            host=db_config['Database']['host'],
+            user=db_config['Database']['user'],
+            password=db_config['Database']['password'],
+            database=db_config['Database']['database'],
+            auth_plugin='mysql_native_password'
+        )
+        cursor = db.cursor(dictionary=True)
+        try:
+            query = """ select d.personId, d.name, d.gender, d.birth, d.location, d.status
+                        from user_dashboard ud
+                        join dashboard d on ud.personId = d.personId
+                        WHERE ud.userEmail = %s
+                """
+            cursor.execute(query, (userEmail,))
+            dashboards = cursor.fetchall()
+
+            if not dashboards:
+                return {'message': 'No user dashboard found'}, 404
+                # 장치 데이터를 리스트에 추가
+
+            # 딕셔너리 목록을 반환하여 간소화
+            return {'dashboards': [
+                {
+                    'personId': dashboard['personId'],
+                    'name': dashboard['name'],
+                    'gender': dashboard['gender'],
+                    'birth': dashboard['birth'].strftime('%Y-%m-%d'),
+                    'status': dashboard['status'],
+                }
+                for dashboard in dashboards
+            ]}, 200
+
+        except Exception as e:
+            return {'message': str(e)}, 500
+        finally:
+            db.close()
+            cursor.close()

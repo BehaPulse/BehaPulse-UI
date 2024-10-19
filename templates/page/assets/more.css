@@ -1,0 +1,223 @@
+.ic-arrow-forward {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z'/%3E%3C/svg%3E");
+}
+
+.ic-logout {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5.616 20q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h6.403v1H5.616q-.231 0-.424.192T5 5.616v12.769q0 .23.192.423t.423.192h6.404v1zm10.846-4.461l-.702-.72l2.319-2.319H9.192v-1h8.887l-2.32-2.32l.702-.718L20 12z'/%3E%3C/svg%3E");
+}
+
+.ic-privacy-tip {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11.5 16.23h1v-5.653h-1zM12 9q.262 0 .439-.177q.176-.177.176-.438q0-.262-.177-.439T12 7.77t-.438.177t-.177.439t.177.438T12 9m0 11.962q-3.014-.895-5.007-3.651T5 11.1V5.692l7-2.615l7 2.615V11.1q0 3.454-1.993 6.21T12 20.963m0-1.062q2.6-.825 4.3-3.3t1.7-5.5V6.375l-6-2.23l-6 2.23V11.1q0 3.025 1.7 5.5t4.3 3.3m0-7.88'/%3E%3C/svg%3E");
+}
+
+.ic-description {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M8.5 17.5h7v-1h-7zm0-4h7v-1h-7zM6.616 21q-.691 0-1.153-.462T5 19.385V4.615q0-.69.463-1.152T6.616 3H14.5L19 7.5v11.885q0 .69-.462 1.153T17.384 21zM14 8V4H6.616q-.231 0-.424.192T6 4.615v14.77q0 .23.192.423t.423.192h10.77q.23 0 .423-.192t.192-.424V8zM6 4v4zv16z'/%3E%3C/svg%3E");
+}
+
+.ic-info {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11.5 16.5h1V11h-1zm.5-6.923q.262 0 .439-.177t.176-.439t-.177-.438T12 8.346t-.438.177t-.177.439t.177.438t.438.177M12.003 21q-1.867 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709M12 20q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8'/%3E%3C/svg%3E");
+}
+
+.ic-live-help {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11.996 16.212q.333 0 .56-.228q.229-.228.229-.561q0-.332-.228-.56t-.56-.228t-.561.228t-.228.56t.228.56q.228.229.56.229m-.515-3.312h.965q.02-.329.067-.571q.047-.243.172-.479t.322-.474t.49-.53q.72-.721 1.044-1.25q.325-.53.325-1.204q0-1.17-.804-1.887q-.804-.716-1.964-.716q-1.067 0-1.838.569q-.77.569-1.125 1.365l.919.38q.252-.597.719-.99q.468-.394 1.264-.394q.944 0 1.404.517q.459.516.459 1.173q0 .502-.275.92q-.275.417-.771.877q-.367.35-.63.668t-.437.636q-.176.317-.24.653q-.066.335-.066.737M12 21.577L9.423 19H5.615q-.69 0-1.153-.462T4 17.384V4.616q0-.691.463-1.153T5.616 3h12.769q.69 0 1.153.463T20 4.616v12.769q0 .69-.462 1.153T18.384 19h-3.807zM5.616 18h4.223L12 20.162L14.162 18h4.223q.269 0 .442-.173t.173-.442V4.615q0-.269-.173-.442T18.385 4H5.615q-.269 0-.442.173T5 4.616v12.769q0 .269.173.442t.443.173M12 11'/%3E%3C/svg%3E");
+}
+
+.ic-arrow-forward-white {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z'/%3E%3C/svg%3E");
+}
+
+.ic-key {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 13.23q-.517 0-.874-.356T5.769 12t.357-.874t.874-.357t.874.357t.357.874t-.357.874t-.874.357M7 17q-2.077 0-3.538-1.461T2 12t1.462-3.538T7 7q1.54 0 2.778.835q1.238.834 1.807 2.165h9.204l2 2l-3.193 3.154l-1.712-1.288l-1.807 1.326L14.298 14h-2.713q-.57 1.312-1.807 2.156T7 17m0-1q1.477 0 2.52-.889T10.856 13h3.76l1.43.967l1.858-1.333l1.621 1.222L21.381 12l-1-1h-9.525q-.292-1.223-1.336-2.111T7 8Q5.35 8 4.175 9.175T3 12t1.175 2.825T7 16'/%3E%3C/svg%3E");
+}
+
+.ic-sensors {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5.637 18.364q-1.235-1.241-1.936-2.87T3 12q0-1.87.701-3.499t1.936-2.864l.713.713q-1.1 1.1-1.725 2.55T4 12q0 1.675.625 3.125T6.35 17.65zm2.825-2.826q-.685-.69-1.073-1.595T7 12q0-1.044.389-1.949t1.072-1.59l.714.714q-.55.55-.862 1.275T8 12t.313 1.55t.862 1.275zM12 13q-.402 0-.701-.299T11 12t.299-.701T12 11t.701.299T13 12t-.299.701T12 13m3.539 2.539l-.714-.714q.55-.55.863-1.275T16 12t-.312-1.55t-.863-1.275l.714-.714q.684.685 1.072 1.59T17 12q0 1.039-.388 1.943t-1.073 1.596m2.824 2.825l-.713-.714q1.1-1.1 1.725-2.55T20 12q0-1.656-.625-3.106T17.65 6.35l.714-.713Q19.598 6.87 20.299 8.5T21 12q0 1.864-.701 3.493t-1.936 2.87'/%3E%3C/svg%3E");
+}
+
+.ic-hub{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M6.002 22.5q-1.04 0-1.771-.728t-.731-1.77t.73-1.771T6 17.5q.292 0 .612.085q.319.084.594.228l2.54-3.16q-.546-.582-.744-1.288t-.068-1.43l-3.736-1.233q-.329.586-.907.942T3 12q-1.042 0-1.77-.728q-.73-.729-.73-1.77t.729-1.771T2.997 7t1.771.73q.731.728.731 1.77q0 .127-.01.196q-.01.07-.01.138l3.718 1.297q.327-.631.934-1.102t1.426-.608V5.458q-.956-.18-1.507-.89T9.5 2.992q0-1.03.729-1.761T11.998.5t1.771.73T14.5 3q0 .858-.554 1.568t-1.504.89V9.42q.82.137 1.417.608t.943 1.102l3.717-1.296q-.019-.089-.019-.149V9.5q0-1.042.729-1.77q.728-.73 1.769-.73t1.771.729t.731 1.769t-.73 1.771Q22.043 12 21 12q-.706 0-1.29-.356t-.908-.942l-3.737 1.233q.131.724-.067 1.427t-.744 1.273l2.54 3.154q.275-.126.595-.207t.61-.082q1.042 0 1.772.729q.729.728.729 1.769t-.728 1.771t-1.77.731t-1.771-.73Q15.5 21.043 15.5 20q0-.446.143-.859q.143-.412.476-.768l-2.54-3.198q-.679.44-1.572.44t-1.591-.44L7.88 18.373q.313.356.466.769q.153.412.153.858q0 1.042-.728 1.77q-.729.73-1.77.73M3 11q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059T3 8t-1.059.441Q1.5 8.883 1.5 9.5t.441 1.059T3 11m3 10.5q.617 0 1.059-.441Q7.5 20.617 7.5 20t-.441-1.059Q6.617 18.5 6 18.5t-1.059.441Q4.5 19.383 4.5 20t.441 1.059Q5.383 21.5 6 21.5m6-17q.617 0 1.059-.441Q13.5 3.617 13.5 3t-.441-1.059T12 1.5t-1.059.441T10.5 3t.441 1.059T12 4.5m0 10.116q.877 0 1.496-.62t.62-1.496t-.62-1.496t-1.496-.62t-1.496.62t-.62 1.496t.62 1.496t1.496.62m6 6.884q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059Q18.617 18.5 18 18.5t-1.059.441Q16.5 19.383 16.5 20t.441 1.059q.442.441 1.059.441M21 11q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059T21 8t-1.059.441Q19.5 8.883 19.5 9.5t.441 1.059T21 11m-3 9'/%3E%3C/svg%3E");
+}
+
+.more-password-text-content-value {
+    font-size: 1.2rem; /* 폰트 크기 설정 */
+    color: #8B8B8B; /* 텍스트 색상 */
+}
+
+.more-password-main-content-bar {
+    display: flex; /* 가로 정렬 */
+    justify-content: space-between; /* 요소 사이의 간격을 최대로 설정 */
+    align-items: end; /* 세로 정렬 */
+    padding-bottom: 10px;
+    width: 80%; /* 너비 설정 */
+    height: 10vh; /* 높이 설정 */
+    border-bottom: 2px solid black; /* 밑줄 설정 */
+}
+
+/* 기본 입력 필드 스타일 */
+#more-password-input-password, #more-password-input-password-check, #more-password-input-old-password
+{
+    width: 100%; /* 너비 설정 */
+    font-size: 1.2rem; /* 폰트 크기 설정 */
+    border: none; /* 테두리 제거 */
+    color: #3F3F3F; /* 텍스트 색상 */
+    outline: none; /* 포커스 시 외곽선 제거 */
+    box-shadow: none; /* 브라우저 기본 스타일 제거 */
+    background-color: transparent; /* 배경색 투명 */
+    caret-color: transparent; /* 커서 색상 투명화 (커서 숨기기) */
+}
+
+/* focus, hover, active 상태에서도 동일한 스타일 적용 */
+#more-password-input-password:focus, #more-password-input-password:hover, #more-password-input-password:active,
+#more-password-input-password-check:focus, #more-password-input-password-check:hover, #more-password-input-password-check:active,
+#more-password-input-old-password:focus, #more-password-input-old-password:hover, #more-password-input-old-password:active
+{
+    background-color: transparent; /* 배경색 투명 유지 */
+    color: #3F3F3F; /* 텍스트 색상 유지 */
+    border: none; /* 테두리 스타일 없음 */
+    box-shadow: none; /* 그림자 효과 제거 */
+    outline: none; /* 외곽선 제거 */
+    caret-color: transparent; /* 커서 숨기기 */
+}
+
+.more-password-password-label
+{
+    font-size: 0.8rem; /* 폰트 크기 설정 */
+    color: #343434; /* 텍스트 색상 */
+    display: inline-block; /* 인라인 블록 요소로 설정 */
+    justify-content: start; /* 가운데 정렬 */
+    width: 100%;
+}
+
+.ic-sensors-krx-outline {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4.527 17.017q-.723-1.084-1.125-2.352Q3 13.396 3 12q0-1.402.402-2.667q.402-1.266 1.125-2.35l.829.542q-.65.95-1.003 2.088Q4 10.75 4 12t.353 2.385t1.003 2.084zm7.473.599q-2.327 0-3.971-1.645T6.385 12t1.644-3.971T12 6.385t3.971 1.644T17.616 12t-1.645 3.971T12 17.616m0-1q1.92 0 3.267-1.349Q16.616 13.92 16.616 12t-1.349-3.267T12 7.384t-3.267 1.35Q7.384 10.08 7.384 12t1.349 3.267T12 16.616m7.448.401l-.823-.548q.65-.95 1.013-2.085Q20 13.25 20 12t-.363-2.387t-1.012-2.088l.823-.542q.743 1.084 1.147 2.35Q21 10.598 21 12q0 1.396-.405 2.665t-1.147 2.352M12 12'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.ic-sensors-krx {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4.527 17.017q-.723-1.084-1.125-2.352Q3 13.396 3 12q0-1.402.402-2.667q.402-1.266 1.125-2.35l.829.542q-.65.95-1.003 2.088Q4 10.75 4 12t.353 2.385t1.003 2.084zm7.473.599q-2.327 0-3.971-1.645T6.385 12t1.644-3.971T12 6.385t3.971 1.644T17.616 12t-1.645 3.971T12 17.616m7.448-.599l-.823-.548q.675-.95 1.025-2.085Q20 13.25 20 12t-.35-2.387t-1.025-2.088l.823-.542q.743 1.084 1.147 2.35Q21 10.598 21 12q0 1.396-.405 2.665t-1.147 2.352'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+#more-sensitivity-lying-slider .rc-slider-rail,
+#more-sensitivity-empty-slider .rc-slider-rail,
+#more-sensitivity-sitting-slider .rc-slider-rail
+{
+  background-color: #D9D9D9;
+  height: 10px;
+}
+
+#more-sensitivity-lying-slider .rc-slider-track,
+#more-sensitivity-empty-slider .rc-slider-track,
+#more-sensitivity-sitting-slider .rc-slider-track 
+
+{
+  background-color: #A9A9A9;
+  height: 10px;
+}
+
+#more-sensitivity-lying-slider .rc-slider-handle,
+#more-sensitivity-empty-slider .rc-slider-handle,
+#more-sensitivity-sitting-slider .rc-slider-handle
+{
+  border-radius: 0px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+}
+
+#more-sensitivity-lying-slider .rc-slider-handle:hover, #more-sensitivity-lying-slider .rc-slider-handle:active, 
+#more-sensitivity-empty-slider .rc-slider-handle:hover, #more-sensitivity-empty-slider .rc-slider-handle:active, 
+#more-sensitivity-sitting-slider .rc-slider-handle:hover, #more-sensitivity-sitting-slider .rc-slider-handle:active 
+{
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+#more-sensitivity-lying-slider .rc-slider-handle:focus,
+#more-sensitivity-empty-slider .rc-slider-handle:focus, 
+#more-sensitivity-sitting-slider .rc-slider-handle:focus 
+{
+  box-shadow: none;
+}
+
+#more-sensitivity-lying-slider .rc-slider-dot-active,
+#more-sensitivity-empty-slider .rc-slider-dot-active,
+#more-sensitivity-sitting-slider .rc-slider-dot-active
+{
+  display: none;
+}
+
+#more-sensitivity-lying-slider .rc-slider-dot,
+#more-sensitivity-empty-slider .rc-slider-dot,
+#more-sensitivity-sitting-slider .rc-slider-dot 
+{
+  display: none;
+}
